@@ -1,0 +1,236 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-family: 'IBM Plex Mono', monospace;
+    }
+    .head{
+    
+        width: 336px;
+        height: 52px;
+        font-size: 40px;
+        margin-top: 44px;
+        color: #4520AB;
+        font-weight: bold;
+        
+    }
+    .elements{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 86px;
+        width: 500px;
+        height: 54px;
+        border: 1px solid black;
+        border-radius: 14px;
+    }
+    .input{
+    width: 209px;
+    height: 25px;
+    margin-left: 21px;
+    border: none;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 20px;
+    outline: none;
+    opacity: 0.5;
+    }
+    
+    .button{
+    width: 107px;
+    height: 38px;
+    margin-right: 8px;
+    border: solid 1px transparent;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    }
+    .button:hover{
+        transform: scale(1.03);
+    }
+    .button:active {
+    transform: scale(0.95);
+    }
+    
+    .output{
+        display: flex;
+        margin-top: 60px;
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+    .rus0{
+        width: 250px;
+        background-color: #e0dfdf;
+        border-radius: 8px 0px 0px 8px;
+        border-right: 2px solid black;
+    }
+    .trans0{
+        width: 250px;
+        background-color: #ADADAD;
+        border-radius: 0 8px 8px 0;
+    }
+    .rus{
+        display: flex;
+        position: relative;
+        height: 40px;
+        align-items: center;
+    }
+    .trans{
+        display: flex;
+        position: relative;
+        height: 40px;
+        align-items: center;
+    }
+    .index{
+        margin-left: 12px;
+    }
+    .textR, .textT{
+        margin-left: 28px;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .buttonT{
+        width: 18px;
+        height: 18px;
+        margin-left: 40px;
+        border-radius: 50px;
+        border: solid 0 transparent;
+        background-color: black;
+        background-image: url(/icons/krest.svg), url(/icons/Ellipse.svg);
+        background-repeat: no-repeat;
+        background-position: 5px, 0px;
+    }
+    
+    .buttonf{
+        padding-left: 20px;
+        margin-top: 65px;
+        width: 176px;
+        height: 38px;
+        font-size: 18px;
+        font-family: 'IBM Plex Mono', monospace;
+        background-color: #ADADAD;
+        border-radius: 8px;
+        border: solid 0 transparent;
+        background-image: url(/icons/krest.svg), url(/icons/Ellipse.svg);
+        background-repeat: no-repeat;
+        background-position: 13.25px, 7px;
+        background-size: 10.5px, 23px;
+    }
+    .buttonf:hover{
+        transform: scale(1.03);
+    }
+    .buttonf:active {
+        transform: scale(0.95);
+    }
+    .buttonT:hover{
+        transform: scale(1.1);
+    }
+    .buttonT:active {
+        transform: scale(0.9);
+    }
+    
+    
+   .inpFull, .inpFull1{
+    position: absolute;
+    width: 133px;
+    font-size: 16px;
+    border-radius: 10px;
+    bottom: 35px;
+    padding: 8px 16px 10px;
+    margin-left: 33px;
+    word-wrap: break-word;
+    background-color: white;
+    display: none;
+   }
+    
+   @media screen and (max-width: 767px) {
+
+    .head{
+        font-size: 36px;
+        width: 308px;
+        margin-top: 20px;
+    }
+    .elements{
+        margin-top: 76px;
+        width: 328px;
+        height: 54px;
+    }
+    .input{
+        width: 209px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .output{
+        width: 328px;
+    }
+    .rus0{
+        width:156px;
+    }
+    .trans0{
+        width: 172px;
+    }
+    .textR, .textT{
+        margin-left: 16px;
+        width: 115px;
+    }
+    .buttonT{
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        background-size: 10.5px, 24px;
+        background-position: 7px, 0px;
+    }
+    .inpFull, .inpFull1{
+        width: 110px;
+        margin-left: 10px;
+       }
+    
+   }
+
+    /* @media (max-width: 767px){
+    
+        .head{
+            font-size: 36px;
+            width: 308px;
+            margin-top: 20px;
+        }
+        .elements{
+            margin-top: 76px;
+            width: 328px;
+            height: 54px;
+        }
+        .input{
+            width: 209px;
+            height: 25px;
+            font-size: 18px;
+        }
+        .output{
+            width: 328px;
+        }
+        .rus0{
+            width:156px;
+        }
+        .trans0{
+            width: 172px;
+        }
+        .textR, .textT{
+            margin-left: 16px;
+            width: 115px;
+        }
+        .buttonT{
+            margin-left: 10px;
+            width: 24px;
+            height: 24px;
+            background-size: 10.5px, 24px;
+            background-position: 7px, 0px;
+        }
+        .inpFull, .inpFull1{
+            width: 110px;
+            margin-left: 10px;
+           }
+        
+    }  */
